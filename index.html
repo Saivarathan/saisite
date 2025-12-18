@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en"  class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai's Portfolio</title>
+
+  <!-- Tailwind CDN (swap for npm build in production) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom colour theme -->
+   
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#3b82f6',
+            secondary: '#10b981'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* tiny custom tweak for the toggle */
+    .toggle-dot { transition: all .3s ease-in-out; }
+  </style>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="sticky top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-primary">Varatharajan_Rajaguru</h1>
+
+
+
+    <!-- nav links -->
+    <ul id="nav-links" class="hidden md:flex gap-6">
+      <li><a href="#about" class="hover:text-primary">About</a></li>
+      <li><a href="#skills" class="hover:text-primary">Skills</a></li>
+      <li><a href="#projects" class="hover:text-primary">Projects</a></li>
+      <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- mobile menu -->
+  <ul id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+    <li><a href="#about" class="block hover:text-primary">About</a></li>
+    <li><a href="#skills" class="block hover:text-primary">Skills</a></li>
+    <li><a href="#projects" class="block hover:text-primary">Projects</a></li>
+    <li><a href="#contact" class="block hover:text-primary">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ================= HERO / ABOUT ================= -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <p class="text-sm uppercase tracking-wide text-secondary">Hello, I'm</p>
+    <h2 class="text-4xl md:text-5xl font-extrabold mt-2">Sai_Varathan</h2>
+    <p class="mt-4 text-lg">AI enthusiast & passionate Front-End Developer specialising in React, Tailwind CSS, and modern JavaScript.</p>
+
+    <div class="mt-6 flex gap-4">
+      <a href="#projects" class="px-5 py-2 rounded-lg bg-primary text-white hover:bg-blue-600 transition">My Work</a>
+      <a href="assets/cv/resume.pdf" target="_blank" class="px-5 py-2 rounded-lg border border-primary text-primary hover:bg-primary hover:text-white transition">Download CV</a>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="./Profile (1).jpg" alt="profile" class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-xl" />
+  </div>
+</section>
+
+<!-- ================= TECHNICAL SKILLS ================= -->
+<section id="skills" class="bg-gray-50 dark:bg-gray-800/50">
+  <div class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Technical Skills</h3>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
+
+      <!-- card -->
+      <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow hover:shadow-lg transition">
+        <i class="fa-brands fa-html5 text-4xl text-orange-500"></i>
+        <h4 class="mt-3 font-semibold">HTML5</h4>
+      </div>
+
+      <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow hover:shadow-lg transition">
+        <i class="fa-brands fa-css3-alt text-4xl text-blue-500"></i>
+        <h4 class="mt-3 font-semibold">CSS3 / Tailwind / Bootstrap</h4>
+      </div>
+
+      <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow hover:shadow-lg transition">
+        <i class="fa-brands fa-js text-4xl text-yellow-400"></i>
+        <h4 class="mt-3 font-semibold">JavaScript / jQuery</h4>
+      </div>
+
+      <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow hover:shadow-lg transition">
+        <i class="fa-brands fa-react text-4xl text-cyan-400"></i>
+        <h4 class="mt-3 font-semibold">React</h4>
+      </div>
+
+      <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow hover:shadow-lg transition">
+        <i class="fa-solid fa-robot text-4xl text-purple-500"></i>
+        <h4 class="mt-3 font-semibold">AI / ML Basics</h4>
+      </div>
+
+      <div class="p-6 rounded-xl bg-white dark:bg-gray-900 shadow hover:shadow-lg transition">
+        <i class="fa-solid fa-file-excel text-4xl text-green-600"></i>
+        <h4 class="mt-3 font-semibold">Microsoft Office</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOFT SKILLS ================= -->
+<section class="max-w-6xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-bold text-center mb-12">Soft Skills</h3>
+  <div class="flex flex-wrap justify-center gap-4">
+    <span class="px-4 py-2 rounded-full bg-primary/10 text-primary dark:bg-primary/20">Problem Solving</span>
+    <span class="px-4 py-2 rounded-full bg-primary/10 text-primary dark:bg-primary/20">Team Collaboration</span>
+    <span class="px-4 py-2 rounded-full bg-primary/10 text-primary dark:bg-primary/20">Communication</span>
+    <span class="px-4 py-2 rounded-full bg-primary/10 text-primary dark:bg-primary/20">Adaptability</span>
+    <span class="px-4 py-2 rounded-full bg-primary/10 text-primary dark:bg-primary/20">Time Management</span>
+    <span class="px-4 py-2 rounded-full bg-primary/10 text-primary dark:bg-primary/20">Creativity</span>
+  </div>
+</section>
+
+<!-- ================= PROJECTS (placeholder) ================= -->
+<section id="projects" class="bg-gray-50 dark:bg-gray-800/50">
+  <div class="max-w-6xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold text-center mb-12">Featured Projects</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- project card -->
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-900">
+        <img src="https://source.unsplash.com/random/600x400?ai" alt="project" class="h-48 w-full object-cover" />
+        <div class="p-5">
+          <h4 class="font-semibold text-lg">AI Chat Assistant</h4>
+          <p class="text-sm mt-1 opacity-80">React, Tailwind, OpenAI API</p>
+        </div>
+      </div>
+
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-900">
+        <img src="https://source.unsplash.com/random/600x400?website" alt="project" class="h-48 w-full object-cover" />
+        <div class="p-5">
+          <h4 class="font-semibold text-lg">E-Commerce UI</h4>
+          <p class="text-sm mt-1 opacity-80">HTML, CSS, Bootstrap</p>
+        </div>
+      </div>
+
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white dark:bg-gray-900">
+        <img src="https://source.unsplash.com/random/600x400?dashboard" alt="project" class="h-48 w-full object-cover" />
+        <div class="p-5">
+          <h4 class="font-semibold text-lg">Analytics Dashboard</h4>
+          <p class="text-sm mt-1 opacity-80">React, Chart.js, Tailwind</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="max-w-6xl mx-auto px-6 py-20 text-center">
+  <h3 class="text-3xl font-bold mb-4">Let's Connect</h3>
+  <p class="opacity-80 mb-8">Feel free to reach out for collaborations or just a friendly hello!</p>
+  <a href="mailto:you@example.com" class="inline-block px-6 py-3 rounded-lg bg-primary text-white hover:bg-blue-600 transition">you@example.com</a>
+</section>
+
+<!-- ================= FOOTER + SOCIAL ================= -->
+<footer class="border-t border-gray-200 dark:border-gray-800 py-8">
+  <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+    <p class="text-sm">© <span id="year"></span> Varathan. Built with ❤ & Tailwind CSS.</p>
+
+    <div class="flex gap-5 text-xl">
+      <a href="https://instagram.com/Varatharajan_Rajaguru" target="_blank" aria-label="Instagram" class="hover:text-primary"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://github.com/Saivarathan" target="_blank" aria-label="GitHub" class="hover:text-primary"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/varatharajan-rajaguru-076725248
+" target="_blank" aria-label="LinkedIn" class="hover:text-primary"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
